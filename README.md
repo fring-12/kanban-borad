@@ -1,5 +1,5 @@
 # kanban-borad
 Kanban board to maintain teams work.
 
-# used tech
+# Used tech
 React, Redux, Redux thunk, react-beautiful-dnd, tailwindCSS
