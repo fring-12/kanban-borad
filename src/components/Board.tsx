@@ -53,7 +53,7 @@ const Board = () => {
 
   const addTask = () => {
     if(taskName.length < 1) return
-    
+
     const column = tasks[`to_do`];
     const copiedItems = [...column.items];
     const id = uuidv4();
@@ -108,7 +108,7 @@ const Board = () => {
                               snapshot.isDraggingOver
                                 ? "bg-blue-200"
                                 : "bg-gray-200"
-                            } p-4 w-[250px] min-h-[500px] rounded-md`}
+                            } p-4 w-[250px] h-[500px] rounded-md overflow-y-scroll`}
                           >
                             {column.items.map((item, index) => {
                               return (
