@@ -52,6 +52,8 @@ const Board = () => {
   };
 
   const addTask = () => {
+    if(taskName.length < 1) return
+    
     const column = tasks[`to_do`];
     const copiedItems = [...column.items];
     const id = uuidv4();
