@@ -64,8 +64,6 @@ const tasksSlice = createSlice({
         destColumn,
       } = payload.payload;
 
-      console.log("sad very", destItems);
-
       let updatedValue = {
         ...columns,
         [sourceKey]: {
